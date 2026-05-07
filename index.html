@@ -1,120 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mohd Saifuddin – Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohd Saifuddin | AI Engineer</title>
+  <meta name="description" content="AI Engineer specializing in end-to-end AI systems - from model training to deployed, production-ready applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- HEADER -->
-    <header>
-      <div class="header-flex">
-        <div class="info">
-          <h1>Mohd Saifuddin</h1>
-          <p class="title">B.Tech in Electronics Engineering (2026)</p>
-          <p class="contact">
-            Email: <a href="mailto:msaif.lkn@gmail.com">msaif.lkn@gmail.com</a> •
-            Phone: +91-9451435135
-          </p>
+  <nav class="nav">
+    <div class="nav-brand">
+      <a href="#hero" class="nav-brand-link">MS</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-icon"></span>
+    </button>
+    <ul class="nav-menu">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#leadership" class="nav-link">Leadership</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="canvas-container"></div>
+
+  <main>
+    <section id="hero" class="section section-hero">
+      <div class="hero-content">
+        <h1 class="hero-name">MOHD SAIFUDDIN</h1>
+        <p class="hero-tagline">I build end-to-end AI systems — from model training to deployed, production-ready applications.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/mohdsaifuddin_resume.pdf" class="btn btn-secondary" download>Download Resume</a>
         </div>
-        <div class="photo">
-          <img src="profile.jpg" alt="Mohd Saifuddin Photo" />
+        <div class="hero-socials">
+          <a href="https://github.com/Mohd-Saifuddin22" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/maif5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
       </div>
-    </header>
-
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>B.Tech in Electronics Engineering</strong><br />
-          Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Jais, Amethi, UP<br />
-          Expected Graduation: 2026
-        </li>
-        <li>
-          <strong>Class 12 (2021)</strong> – Montfort Inter College, Mahanagar, Lucknow<br />
-          Score: 81%
-        </li>
-        <li>
-          <strong>Class 10 (2019)</strong> – Career Convent College, Vikas Nagar, Lucknow<br />
-          Score: 81%
-        </li>
-      </ul>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming:</strong> Python, NumPy, Pandas, Matplotlib, SQL</li>
-        <li><strong>Machine/Deep Learning:</strong> TensorFlow, PyTorch</li>
-        <li><strong>Analytics/Reporting:</strong> Microsoft Excel, Power BI</li>
-        <li><strong>Languages:</strong> Fluent in English</li>
-        <li><strong>Other:</strong> Prompt Writing</li>
-      </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <h3>SAR-to-Optical Image Translation (S-CycleGAN)</h3>
-      <ul>
-        <li>Supervised Cycle-Consistent Adversarial Network to translate SAR → optical imagery</li>
-        <li>Combined CycleGAN + Pix2Pix for structural detail preservation</li>
-        <li>Outperformed baselines on PSNR, SSIM & FSIM<sub>c</sub></li>
-      </ul>
-
-      <h3>
-        <a href="https://github.com/AmanBarte/AI-Voice-cloning.git" target="_blank">AI-Voice Cloning 🔗</a>
-      </h3>
-      <ul>
-        <li>Generic TTS using VITS/Tacotron for text-to-speech</li>
-        <li>GE2E encoder for voice embeddings and cloning</li>
-        <li>Gradio GUI and CLI support</li>
-        <li>Audio normalization and modular structure</li>
-      </ul>
-
-      <h3>
-        <a href="https://github.com/Mohd-Saifuddin22/WebScraping-SLM.git" target="_blank">Web Scraping + Small Language Model (SLM) 🔗</a>
-      </h3>
-      <ul>
-        <li>Data scraping from myscheme.gov.in using Selenium</li>
-        <li>Chunking and embedding with Sentence Transformers</li>
-        <li>Indexed with FAISS, answered with Flan-T5 in RAG setup</li>
-      </ul>
-
-      <h3>Credit Card Fraud Detection</h3>
-      <ul>
-        <li>SVM model on 284k transactions</li>
-        <li>Preprocessing: scaling, outliers, class balancing</li>
-        <li>95.94% accuracy</li>
-      </ul>
-
-      <h3>Sleep Analysis Using Deep Learning</h3>
-      <ul>
-        <li>EEG + EOG classification using CNN + Transformer</li>
-        <li>30-second epoch alignment, class balancing</li>
-        <li>Achieved 82.1% accuracy and 0.79 F1-score</li>
-      </ul>
-    </section>
-
-    <!-- RESPONSIBILITIES + Download -->
-    <section id="responsibilities" class="por-download">
-      <div class="por-header">
-        <h2>Positions of Responsibility</h2>
-        <a class="download-link" href="Mohd_Saifuddin_Resume.pdf" download>⬇️ Download Resume</a>
+    <section id="skills" class="section section-skills">
+      <div class="section-content">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 class="skill-card-title">Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">ML & DL</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Hugging Face Transformers</span>
+              <span class="skill-tag">Sentence Transformers</span>
+              <span class="skill-tag">QLoRA</span>
+              <span class="skill-tag">PEFT</span>
+              <span class="skill-tag">DeepFace</span>
+              <span class="skill-tag">MTCNN</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">NLP & LLMs</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">LLM Fine-Tuning</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">FAISS</span>
+              <span class="skill-tag">Flan-T5</span>
+              <span class="skill-tag">Unsloth</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card-title">Tools & Infrastructure</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Selenium</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">OpenCV</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul>
-        <li>IEEE Technical Branch Head</li>
-        <li>Teaching Volunteer, Gyanarpan Project (Amethi)</li>
-        <li>Science & Technical Council Member</li>
-      </ul>
     </section>
-  </div>
+
+    <section id="experience" class="section section-experience">
+      <div class="section-content">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Data Engineering Intern</h3>
+            <span class="experience-company">Asakta Electronics and Communication, Hyderabad</span>
+          </div>
+          <div class="experience-meta">
+            <span class="experience-date">May 2025 – July 2025</span>
+          </div>
+          <ul class="experience-bullets">
+            <li>Built real-time ingestion APIs (FastAPI, AWS) to process telemetry from 150K+ IoT devices with async pipelines and Pydantic validation.</li>
+            <li>Deployed high-concurrency async services for scalable cloud streaming workloads.</li>
+          </ul>
+          <div class="experience-tags">
+            <span class="exp-tag">Python</span>
+            <span class="exp-tag">SQL</span>
+            <span class="exp-tag">FastAPI</span>
+            <span class="exp-tag">Kafka</span>
+            <span class="exp-tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-projects">
+      <div class="section-content">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3 class="project-title">Sentio Mind</h3>
+              <span class="project-subtitle">Emotion Intelligence Pipeline</span>
+            </div>
+            <div class="project-tech">
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">MTCNN</span>
+              <span class="project-tech-tag">DeepFace</span>
+              <span class="project-tech-tag">TensorFlow</span>
+              <span class="project-tech-tag">OpenCV</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Built production-grade facial emotion analysis system for CCTV footage using MTCNN for face detection and DeepFace (FaceNet 128d) for identity tracking via cosine similarity.</li>
+              <li>Designed memory-safe video processing with Python generators, 4x spatial downscaling, micro-expression detection at 8 FPS.</li>
+              <li>Output emotion timelines and stress indexes to a self-contained HTML dashboard with zero external CDN dependencies.</li>
+            </ul>
+            <a href="https://github.com/Mohd-Saifuddin22/Sentio" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3 class="project-title">LLM Human Preference Prediction</h3>
+              <span class="project-subtitle">Fine-tuned Hybrid Ensemble</span>
+            </div>
+            <div class="project-tech">
+              <span class="project-tech-tag">PyTorch</span>
+              <span class="project-tech-tag">Llama 3.2</span>
+              <span class="project-tech-tag">DeBERTa-v3</span>
+              <span class="project-tech-tag">QLoRA</span>
+              <span class="project-tech-tag">Unsloth</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Fine-tuned hybrid ensemble (Llama 3.2 3B + DeBERTa-v3) on 57K+ chatbot interactions for LMSYS Kaggle competition.</li>
+              <li>Replaced Llama's causal head with custom 3-class PyTorch classifier.</li>
+              <li>Reduced GPU memory from 48GB to under 4GB using 4-bit QLoRA via Unsloth, trained on RunPod A6000, achieved 1.10 Log Loss.</li>
+            </ul>
+            <a href="https://github.com/Mohd-Saifuddin22/LLM_Classification_Fine_Tuning" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3 class="project-title">RAG Question-Answering System</h3>
+              <span class="project-subtitle">Government Schemes Knowledge Base</span>
+            </div>
+            <div class="project-tech">
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">FAISS</span>
+              <span class="project-tech-tag">Sentence Transformers</span>
+              <span class="project-tech-tag">Flan-T5</span>
+              <span class="project-tech-tag">Selenium</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Scraped 100 government schemes from myscheme.gov.in using Selenium.</li>
+              <li>Chunked and embedded text with all-MiniLM-L6-v2 (384d), indexed into FAISS vector store for sub-second retrieval.</li>
+              <li>Built interactive RAG pipeline connecting retrieved context to Flan-T5-Large.</li>
+            </ul>
+            <a href="https://github.com/Mohd-Saifuddin22/WebScraping-SLM" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <h3 class="project-title">SAR-to-Optical Image Translation</h3>
+              <span class="project-subtitle">GAN-based Image Conversion</span>
+            </div>
+            <div class="project-tech">
+              <span class="project-tech-tag">PyTorch</span>
+              <span class="project-tech-tag">S-CycleGAN</span>
+              <span class="project-tech-tag">Computer Vision</span>
+              <span class="project-tech-tag">OpenCV</span>
+            </div>
+            <ul class="project-bullets">
+              <li>Trained Supervised CycleGAN on 20,000+ paired SAR-optical satellite images to translate radar data into photorealistic optical formats.</li>
+              <li>Validated with PSNR and SSIM metrics.</li>
+            </ul>
+            <a href="https://github.com/Mohd-Saifuddin22/SAR-image-to-Optical-image-Conversion" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-education">
+      <div class="section-content">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card">
+          <h3 class="education-degree">B.Tech Electronics Engineering</h3>
+          <p class="education-institution">Rajiv Gandhi Institute of Petroleum Technology, Jais</p>
+          <div class="education-meta">
+            <span class="education-cpi">CPI: 7.3/10.0</span>
+            <span class="education-date">May 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership" class="section section-leadership">
+      <div class="section-content">
+        <h2 class="section-title">Leadership & Achievements</h2>
+        <div class="leadership-list">
+          <div class="leadership-card">
+            <h3 class="leadership-title">IEEE RGIPT Technical Branch Head</h3>
+            <p class="leadership-org">Student Chapter</p>
+          </div>
+          <div class="leadership-card">
+            <h3 class="leadership-title">Hackathon Winner</h3>
+            <p class="leadership-org">IEEE Kode Kurrent 1.0</p>
+          </div>
+          <div class="leadership-card">
+            <h3 class="leadership-title">Gyan Arpan Student Mentor</h3>
+            <p class="leadership-org">Mentoring Program</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+      <div class="section-content">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <a href="tel:+919451435135" class="contact-item" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            +91-9451435135
+          </a>
+          <a href="mailto:msaif.lkn@gmail.com" class="contact-item" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            msaif.lkn@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/maif5" class="contact-item" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            linkedin.com/in/maif5
+          </a>
+          <a href="https://github.com/Mohd-Saifuddin22" class="contact-item" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/Mohd-Saifuddin22
+          </a>
+        </div>
+        <div class="resume-download">
+          <a href="assets/mohdsaifuddin_resume.pdf" class="btn btn-primary" download>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/particle-background.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
